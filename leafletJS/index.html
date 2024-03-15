@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geolocation</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.leaflet-marker-icon,
+		.leaflet-marker-shadow {
+			display: none !important;
+		}
+
+		.pointers,
+		.taxi-pointers {
+			display: block !important;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="map" style="width:100%; height: 90vh"></div>
+</body>
+
+</html>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="leaflet.js"></script>
+
+<script>
+	const trajetos = [
+		{
+			"nome": "Colégio Adventista da Liberdade",
+			"latitude": -23.560066,
+			"longitude": -46.636597,
+			"endereco": "Rua Tagua, 88"
+		},
+		{
+			"nome": "Danilo Brito",
+			"latitude": -23.552416,
+			"longitude": -46.631282,
+			"endereco": "Rua Tabatinguera, 49"
+
+		},
+		{
+			"nome": "Felipe Guerrino",
+			"latitude": -23.558475,
+			"longitude": -46.623619,
+			"endereco": "Rua Professor, 13"
+		}
+	]
+
+	exibirRota(trajetos)
+
+	// // <img src="https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker" tabindex="0" role="button" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(77px, 299px, 0px); z-index: 299; outline-style: none;">
+
+</script>
